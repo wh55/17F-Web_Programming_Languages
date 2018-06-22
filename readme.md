@@ -12,9 +12,9 @@ This folder contains the source code for the project of the course.
 
 - `House.txt` contains some sample data for the "House" collection in MongoDB database.
 
-- `realtor.png` is the snapshots of the user interface.
-
 - `Report.pdf` is a very concise report for the project.
+
+- `realtor.png` is the snapshots of the user interface.
 
 
 ## Project: Realtor Website
