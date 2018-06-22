@@ -1,0 +1,35 @@
+<form ng-submit="search()">
+	<div class="input-group">
+		<input type="text" ng-model="keyword" name="keyword" class="form-control" style="width: 30em" />
+		<input type="submit" id="searh" value="Search" class="btn btn-primary" />
+	</div>
+</form>
+<br>
+
+<!-- <div ng-if=true>
+<p><input type="button" class="btn btn-danger" value="Add a House" ng-click="addhouse()"></input></p>
+</div>
+
+<ul>
+    <li ng-repeat='house in houses'>
+        <a href="/#/house/{{house._id}}">
+            {{house.address}}, {{house.city}}, {{house.state}} {{house.zip}}
+        </a>
+    </li>
+</ul> -->
+
+<div class="row" >
+  <div class="col-md-4" ng-repeat='house in houses'>
+    <a href="/#/house/{{house._id}}">
+      <div class="thumbnail">
+        <img src="images/{{house._id}}/0.jpg" alt="photo0" onerror="this.onerror=null; this.src='images/default.jpg'"/>
+        <div class="caption">
+          <h3> {{house.address}}</h3>
+          <p class="description">{{house.city}}, {{house.state}} {{house.zip}}</p>
+        </div>
+      </div>
+		</a>
+  </div>
+</div>
+
+</div>

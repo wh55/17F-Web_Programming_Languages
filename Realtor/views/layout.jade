@@ -1,0 +1,38 @@
+doctype html
+html(ng-app='Realtor')
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-resource.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.js')
+    script(src='/javascripts/realtor.js')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+  body
+    nav.navbar.navbar-default.navbar-static-top(role="navigation")
+      .container-fluid
+        .margin-left-right
+          .navbar-header
+            a.navbar-brand(href="/#/") Realtor
+          ul.nav.navbar-nav.navbar-left
+            li
+              if (user)
+                a(href="/#/favorites") Favorites
+              if (!user)
+                a(href="/login") Favorites
+          ul.nav.navbar-nav.navbar-right
+            if (!user)
+              li
+                a(href="/register") REGISTER
+              li
+                a(href="/login") LOGIN
+            if (user)
+              li
+                if (user.username == "admin")
+                  a(href="/#/admin" style="color: #347B98;") admin
+                if (user.username != "admin")
+                  .navbar-text(style="color: #347B98;") #{user.username}
+              li
+                a(href="/logout") LOGOUT
+    .margin-left-right
+      block content
