@@ -6,11 +6,11 @@ This course focuses on the understanding of web architecture, standards, protoco
 ## What's inside the folder
 This folder contains the source code for the project of the course.
 
+- `Realtor` folder contains the source code for the project.
+
 - `FinalProject.docx` is the requirement for the project.
 
 - `House.txt` contains some sample data for the "House" collection in MongoDB database.
-
-- `Realtor` folder contains the source code for the project.
 
 - `realtor.png` is the snapshots of the user interface.
 
