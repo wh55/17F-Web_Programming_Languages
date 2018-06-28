@@ -17,7 +17,7 @@ This folder contains the source code for the project of the course.
 - `realtor.png` is the snapshots of the user interface.
 
 
-## Project: Realtor Website
+## Project: Realtor Web Application
 MEAN stack / Node.js / MongoDB / Web Application
 
 The project is to implement a simple realtor website. Users can sign up and login, search and browse, add house to the favorite list, etc. Administrator can add, delete and update the house information.
